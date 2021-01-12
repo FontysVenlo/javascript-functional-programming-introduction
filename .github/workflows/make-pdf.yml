@@ -10,8 +10,15 @@ jobs:
       - run: mkdir output
       - uses: docker://dalibo/pandocker:latest
         with: 
-          args: "README.md -o output/report.pdf --toc --pdf-engine=xelatex --template=./eisvogel.latex --listing"
+          args: "0-setup.md -o output/0-setup.pdf --toc --pdf-engine=xelatex --template=./eisvogel.latex --listing"
       - uses: actions/upload-artifact@master
         with:
-          name: report.pdf
+          name: 0-setup.pdf
           path: output
+      - uses: docker://dalibo/pandocker:latest
+        with: 
+          args: "1-functional-programming-basics.md -o output/1-functional-programming-basics.pdf --toc --pdf-engine=xelatex --template=./eisvogel.latex --listing"
+      - uses: actions/upload-artifact@master
+        with:
+          name: 1-functional-programming-basics.md.pdf
+          path: output          
