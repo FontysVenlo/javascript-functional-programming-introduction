@@ -1,8 +1,8 @@
 ---
 title: "Functional programming with Javascript - "
-subtitle: "Functional programming Basics"
+subtitle: "Basics"
 author: [Stefan Sobek]
-date: "2020-06-10"
+date: "2021-01-01"
 subject: "An introduction course to functional programming with Javascript"
 keywords: [Fontys, Markdown, Javascript, Function programming]
 lang: "en"
@@ -35,74 +35,114 @@ revealOptions:
 ---
 
 # Functional Programming - Basics
-<!-- .slide: data-background="images/slides-headline-background.jpg" -->
 
 ## What is Functional Programming?
 
 > Functional programming is a programming paradigm a style of building the structure and elements of computer programs that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data -
 *Wikipedia*
+<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+- Functional programming is<!-- .element: class="fragment fade-up" -->
+  - a programming paradigma<!-- .element: class="fragment fade-up" -->
+  - mathematical functions<!-- .element: class="fragment fade-up" -->
+  - avoids changing-state<!-- .element: class="fragment fade-up" -->
+  - avoids mutable data<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+## What is a function?
+
+- Function has inputs and an output<!-- .element: class="fragment fade-up" -->
+
+![Inputs and Outputs](images/input-output1.png)<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+- Output (result) depends on the inputs (parameters)<!-- .element: class="fragment fade-up" -->
+Simple example: <!-- .element: class="fragment fade-up" -->
+
+![Simple example](images/input-output2.png)<!-- .element: class="fragment fade-up" -->
+
+- 12 and 34 are inputs <!-- .element: class="fragment fade-up" -->
+- the function sums (+)<!-- .element: class="fragment fade-up" -->
+- 46 is the output<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+Another example:
+
+![Input and Output other example](images/input-output3.png)<!-- .element: class="fragment fade-up" -->
+
+- a geometric object and 2 are inputs<!-- .element: class="fragment fade-up" -->
+- the function is scaling<!-- .element: class="fragment fade-up" -->
+- the output is a geometric object<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Why Functional Programming?
 
-- Object-oriented programming languages
-  - Java
-  - C++
-  - C#
-- difficult bug fixing
-- in enterprise usually thousands of variables
-- apps get into buggy state
+- Object-oriented programming languages<!-- .element: class="fragment fade-up" -->
+  - Java<!-- .element: class="fragment fade-up" -->
+  - C++<!-- .element: class="fragment fade-up" -->
+  - C#<!-- .element: class="fragment fade-up" -->
+- difficult bug fixing<!-- .element: class="fragment fade-up" -->
+- in enterprise usually thousands of variables<!-- .element: class="fragment fade-up" -->
+- apps get into buggy state<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Functional Programming
 
-- uses some techniques to avoid buggy states
-  - smaller parts
-  - self-contained parts
-  - easily testable parts
-  - easily modifiable parts
+- uses some techniques to avoid buggy states<!-- .element: class="fragment fade-up" -->
+  - smaller parts<!-- .element: class="fragment fade-up" -->
+  - self-contained parts<!-- .element: class="fragment fade-up" -->
+  - easily testable parts<!-- .element: class="fragment fade-up" -->
+  - easily modifiable parts<!-- .element: class="fragment fade-up" -->
 
 <!-- n -->
 
 - Object-oriented languages also try to organize the code in smaller, self-contained parts so that the code gets more easily testable and modifiable. However, often the success rate is not so high. 
-- So Functional Programming offers some other techniques for reach that goal. By the way, most modern OO-languages also introduced functional programming (e.g. Java)
+- So Functional Programming offers some other techniques for reaching that goal. By the way, most modern OO-languages also introduced functional programming (e.g. Java)
 
 <!-- s -->
 
 ### Imperative vs Declarative
 
-- What does a car consists of?
+- What does a car consists of?<!-- .element: class="fragment fade-up" -->
 
-vs. 
+vs.<!-- .element: class="fragment fade-up" -->
 
-- How do I build a car?
+- How do I build a car?<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### How vs What
 
-- Imperative: HOW?
-- Declarative: WHAT?
+Imperative: HOW?<!-- .element: class="fragment fade-up" -->
+
+Declarative: WHAT?<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Imperative "HOW" example
 
-> Sum of an array of numbers
+> Sum of an array of numbers<!-- .element: class="fragment fade-up" -->
 
-- Set x to zero
-- Add the first number in the array to x
-- Repeat previous step for the rest of the numbers in the array
+- Set x to zero<!-- .element: class="fragment fade-up" -->
+- Add the first number in the array to x<!-- .element: class="fragment fade-up" -->
+- Repeat previous step for the rest of the numbers in the array<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Declarative "WHAT" example
 
-> Sum of an array of numbers
+> Sum of an array of numbers<!-- .element: class="fragment fade-up" -->
 
-- X is the sum of all the numbers in the array
+- X is the sum of all the numbers in the array<!-- .element: class="fragment fade-up" -->
+
+🤔<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
@@ -304,15 +344,15 @@ const numberOfSpouses =
   findNumberOfSpouses(presidentsArray[41], spousesArray);
 ```
 
-- functions and data separated<!-- .element: class="fragment" -->
-- functions do not (cannot) change the data<!-- .element: class="fragment" -->
-- functions return new data objects<!-- .element: class="fragment" -->
+- functions and data separated<!-- .element: class="fragment fade-up" -->
+- functions do not (cannot) change the data<!-- .element: class="fragment fade-up" -->
+- functions return new data objects<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ## First-class functions
 
-> In computer science, a programming language is said to have first-class functions if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures. - Wikipedia <!-- .element: class="fragment" -->
+> In computer science, a programming language is said to have first-class functions if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures. - Wikipedia <!-- .element: class="fragment fade-up" -->
 
 - In short, you can use functions as parameters and return values.
 - You can create arrays of functions
