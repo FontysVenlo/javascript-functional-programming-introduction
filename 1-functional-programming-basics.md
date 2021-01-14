@@ -419,3 +419,10 @@ function giveMeAFunction() {
 - For more information see: <!-- .element: class="fragment fade-up" -->
 
 [ESLint - Pluggable JavaScript linter](https://eslint.org/)<!-- .element: class="fragment fade-up" -->
+
+
+# Links and Resources
+
+- [The JavaScript Beginner's Handbook](https://flaviocopes.com/page/javascript-handbook/)
+- [W3C Schools JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+- [The Modern JavaScript Tutorial](https://javascript.info/)
