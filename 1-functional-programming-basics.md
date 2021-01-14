@@ -148,15 +148,15 @@ Declarative: WHAT?<!-- .element: class="fragment fade-up" -->
 
 ## Core Concepts of Functional Programming
 
-- Immutability
-- Separating functions and data
-- First-class functions
+- Immutability<!-- .element: class="fragment fade-up" -->
+- Separating functions and data<!-- .element: class="fragment fade-up" -->
+- First-class functions<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Immutability
 
-**Java**
+**Java**<!-- .element: class="fragment fade-up" -->
 
 ```java
 int x = 10; // initialize variable 
@@ -168,8 +168,9 @@ System.out.println(x); // prints 100
 x = -1; // change value again
 System.out.println(x); // prints -1
 ```
+<!-- .element: class="fragment fade-up" -->
 
-**Javascript**
+**Javascript**<!-- .element: class="fragment fade-up" -->
 
 ```javascript
 var x = 10; // initialize variable 
@@ -181,6 +182,8 @@ console.log(x); // prints 100
 x = -1; // change value again
 console.log(x); // prints -1
 ```
+<!-- .element: class="fragment fade-up" -->
+
 <!-- s -->
 
 ### Immutability in javascript
@@ -189,35 +192,52 @@ console.log(x); // prints -1
 var x = 10; // instead of var
 let y = 10; // or let
 ```
+<!-- .element: class="fragment fade-up" -->
 
 ```javascript
 const x = 10; // use const keyword
 ```
+<!-- .element: class="fragment fade-up" -->
 
-- `const` defines a constant which cannot be changed
-- comparable to `final` in java
-- variables cannot be changed!!!
+`const`<!-- .element: class="fragment fade-up" -->
+
+- keyword defines a constant which cannot be changed<!-- .element: class="fragment fade-up" -->
+
+- In Java: <!-- .element: class="fragment fade-up" -->
+
+`final`<!-- .element: class="fragment fade-up" -->
+
+- variables cannot be changed!!!<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
-- `x = 3` literally means that x is 3
-- In OO you usually say that x is a container which can hold a value.
+🤔
 
-- `const pi = 3.14159` means literally that pi is 3.14159
-- functional programming treats all values as constant (such as pi)
+`x = 3` <!-- .element: class="fragment fade-up" -->
+
+- literally means that x is 3<!-- .element: class="fragment fade-up" -->
+- In OO you usually say that x is a container which can hold a value.<!-- .element: class="fragment fade-up" -->
+
+`const pi = 3.14159` <!-- .element: class="fragment fade-up" -->
+
+- literally means that pi is 3.14159<!-- .element: class="fragment fade-up" -->
+- functional programming treats all values as constant (such as pi)<!-- .element: class="fragment fade-up" -->
+
+- ➡ Never change a running sys... ehm initialized variable<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
-### Example 
+### Examples
 
-#### Java
+#### Java<!-- .element: class="fragment fade-up" -->
 
 ```java
 Employee employee1 = new Employee('Elon Musk', 70000);
 employee1.raiseSalary (10000000000);
 ```
+<!-- .element: class="fragment fade-up" -->
 
-#### Javascript immutable example
+#### Javascript immutable example<!-- .element: class="fragment fade-up" -->
 
 ```javascript
 const employee1 = {
@@ -231,27 +251,24 @@ const updatedEmployee1 = {
 };
 
 ```
+<!-- .element: class="fragment fade-up" -->
 
 <!-- n -->
 
 - Advantage is that we do not have to handle state changes.
-- Remember in Java variables that are passed through multiple objects of classes, like the employee, which is simply a reference to this object. If now the salary will be changed somewhere, who can control that?
-- This could lead to unwanted behaviour in your program. 
+- No change of reference variables like in other languages.
+- e.g. in Java, passed by reference parameters!!! If you change the value of the passed parameter, you change the whole reference variable.
+- Btw. to be fair, there are best practices in OO languages like Java to prevent this unwanted/unsecure behaviour, e.g. use unmodifiable Collections, make copies of variables and so forth.
+- Generally, mutable variables can and often will lead to unwanted behaviour and bugs in your program.
+
 
 <!-- s -->
 
 ## Separation of Data and Functions
 
-### Data 
+### Data (as JSON)<!-- .element: class="fragment fade-up" -->
 
 ```javascript
-{
-    "id": 42,
-    "name": "BUSH G W",
-    "birth_year": 1946,
-    "years_served": 8,
-    "party": "REPUBLICAN",
-  },
   {
     "id": 43,
     "name": "OBAMA B",
@@ -267,8 +284,11 @@ const updatedEmployee1 = {
     "party": "REPUBLICAN",
   }
 ```
+<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
+
+### Even more data
 
 ```javascript
   {
@@ -285,27 +305,20 @@ const updatedEmployee1 = {
     "nr_children": 3,
     "marriage_year": 1977
   },
-    {
-    "pres_id": 42,
-    "spouse_name": "WELCH L L",
-    "spouse_age": 31,
-    "nr_children": 2,
-    "marriage_year": 1977
-  },
-
 ```
+<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
-> Data in Functional Programming is represented as simple arrays and hashes or javascript objects
+> Data in Functional Programming is represented as simple arrays and hashes or (javascript) objects
 
 <!-- s -->
 
 ### Functions
 
-#### In object orientation
+#### In object orientation<!-- .element: class="fragment fade-up" -->
 
-**Java**
+**Java**<!-- .element: class="fragment fade-up" -->
 
 ```java
 public class President {
@@ -321,15 +334,18 @@ public class President {
   }
 }
 ```
+<!-- .element: class="fragment fade-up" -->
 
 <!-- n -->
 
 - Functions or methods are along with the data they belong to - inside classes.
 - makes it easy to access as everything is in place
 
+<!-- s -->
+
 #### In functional programming
 
-**Javascript***
+**Javascript**<!-- .element: class="fragment fade-up" -->
 
 ```javascript
 const presidentsArray = [ ... ];
@@ -343,6 +359,7 @@ const findNumberOfSpouses = (president, spouses) => ({
 const numberOfSpouses = 
   findNumberOfSpouses(presidentsArray[41], spousesArray);
 ```
+<!-- .element: class="fragment fade-up" -->
 
 - functions and data separated<!-- .element: class="fragment fade-up" -->
 - functions do not (cannot) change the data<!-- .element: class="fragment fade-up" -->
@@ -354,8 +371,8 @@ const numberOfSpouses =
 
 > In computer science, a programming language is said to have first-class functions if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures. - Wikipedia <!-- .element: class="fragment fade-up" -->
 
-- In short, you can use functions as parameters and return values.
-- You can create arrays of functions
+- In short, you can use functions as parameters and return values.<!-- .element: class="fragment fade-up" -->
+- You can create arrays of functions<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
@@ -369,9 +386,36 @@ const arrayOfFunctions = [
 
 doSomething(function sayHello() { /* ... */ });
 
+// this is the non-arrow syntax of defining a function 
 function giveMeAFunction() {
   return function() {
     console.log('I am a function');
   }
 }
 ```
+<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+## Some issues
+
+- Javascript perfectly suits well for using functional programming 💪<!-- .element: class="fragment fade-up" -->
+- However, Javascript is not a PURE functional programming language, like e.g. Haskell 😢<!-- .element: class="fragment fade-up" -->
+- E.g. constants work well but do not totally ensure immutability, see: 🐛<!-- .element: class="fragment fade-up" -->0
+
+
+<!-- s -->
+
+![Immutability issue](images/1-immutability-issue.jpg)
+
+<!-- s -->
+
+## Solution
+
+- ESLint. We do not go into details, if you are interested:<!-- .element: class="fragment fade-up" -->
+
+[jhusain/eslint-plugin-immutable: ESLint plugin to disable all mutation in JavaScript.](https://github.com/jhusain/eslint-plugin-immutable)<!-- .element: class="fragment fade-up" -->
+
+- For more information see: <!-- .element: class="fragment fade-up" -->
+
+[ESLint - Pluggable JavaScript linter](https://eslint.org/)<!-- .element: class="fragment fade-up" -->

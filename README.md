@@ -12,7 +12,7 @@ titlepage-rule-color: "400070"
 page-background : "images/fontyslogo-background.png"
 # reveal settings
 # simple black white league beige sky night serif simple solarized blood moon
-theme: night
+theme: black
 separator: <!-- s -->
 verticalSeparator: <!-- v -->
 notesSeparator: <!-- n -->
@@ -25,7 +25,7 @@ revealOptions:
   progress: true
   width: 1248
   height: 800
-  parallaxBackgroundImage: 'images/fontys-parallax-all.jpg'
+  parallaxBackgroundImage: 'images/fontys-parallax-all-dark.jpg'
   parallaxBackgroundSize: '2100px 1024px'
   #autoSlide: 4000
   #loop: true
@@ -35,9 +35,12 @@ revealOptions:
 ---
 
 # Functional programming with Javascript - Introduction
-<!-- .slide: data-background="images/slides-headline-background.jpg" -->
 
-This introduction course is part of a course called PPAR - Programming Paradigms of Fontys University of Applied Sciences. The idea of PPAR is to let students in higher semesters experience differnt programming paradigms - thus experience what the pros and cons are.
+- PPAR - Programming Paradigms course at Fontys Venlo<!-- .element: class="fragment fade-up" -->
+- Javascript (modern) + Functional Programming (modern) 🥳<!-- .element: class="fragment fade-up" -->
+
+<!-- n -->
+This introduction course is part of a course called PPAR - Programming Paradigms of Fontys University of Applied Sciences. The idea of PPAR is to let students in higher semesters experience different programming paradigms - thus experience what the pros and cons are.
 This part covers the functional programming paradigm. For this course was javascript chosen. The reason for that is, that javascript is not only a popular but also a modern programming language. Students can and will use this language also in multiple course - so following this course will improve the programming skills with javascript.
 
 <!-- s -->
@@ -46,31 +49,59 @@ This part covers the functional programming paradigm. For this course was javasc
 
 ### Purpose
 
-The purpose of this workshop as part of the PPAR course is to give a brief introduction of functional programming with javascript by quickly **doing it**!
-We will use ES6+ as well as node.js for this course.
+- The purpose of this workshop as part of the PPAR course is to give a brief introduction of functional programming with javascript by just<!-- .element: class="fragment fade-up" -->
+
+ **doing it**<!-- .element: class="fragment fade-up" -->
+
+- We will use ES6+ as well as node.js<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
+### Learning objectives
 
-### The main learning goals
-
-- Get familiar with Haskell language and its compiler
-- Know what this functional programming language is and what the benefits of using it are
-- Know and use some basic syntax of haskell
-- Being able to create small haskell programs
+- The goal of functional programming<!-- .element: class="fragment fade-up" -->
+- Declarative vs. imperative programming<!-- .element: class="fragment fade-up" -->
+- Ensuring immutability<!-- .element: class="fragment fade-up" -->
+- Arrow functions in ES6<!-- .element: class="fragment fade-up" -->
+- Passing functions as arguments<!-- .element: class="fragment fade-up" -->
+- Mapping, filtering, slicing, sorting, and reducing<!-- .element: class="fragment fade-up" -->
+- Advanced functional concepts, currying, recursion<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Course structure
 
-The course is structured for 4 lecturing units where either short lecture or practical work on assignments will take place.
+There will be 4 lecturing units where either short lecture or practical work on assignments will take place.<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+### Exercises
+
+There will be Exercises which can be delivered into an individual Github repository provided by github classroom.<!-- .element: class="fragment fade-up" -->
+
+The invitation link to this exercises will be send during the lecture via mail and as channel-message.<!-- .element: class="fragment fade-up" -->
+
+> Doing the exercises is optional but highly recommended in order to be able to do the assignments<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
 ### Assignments
 
-There will be **one** main Assignment which must be delivered into an individual Github repository provided by github classroom.
+There will be assignments which must be delivered into an individual Github repository provided by github classroom.<!-- .element: class="fragment fade-up" -->
 
-The invitation link to this assignments will be send during the lecture via mail and as channel-message.
+The invitation link to this assignments will be send during the lecture via mail and as channel-message.<!-- .element: class="fragment fade-up" -->
 
-**NOTE** you have to do all as *mandatory* marked assignments, *doing means pushed into your individual github repository*, in order to pass the Haskell part of this course.
+> You have to do all assignments, doing means pushed into your individual github repository, in order to pass the Functional programming part of the PPAR course.<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+### Grading
+
+- Grading was or will be explained separately. See also connect-webpage for the details: <!-- .element: class="fragment fade-up" -->
+
+[PPAR - Programming paradigms - Connect](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/)<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+<!-- .slide: data-background="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" -->
+
+Let's go to work 💻
