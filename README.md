@@ -2,7 +2,7 @@
 title: "Functional programming with Javascript - "
 subtitle: "Introduction"
 author: [Stefan Sobek]
-date: "2020-06-10"
+date: "2021-01-01"
 subject: "An introduction course to functional programming with Javascript"
 keywords: [Fontys, Markdown, Javascript, Function programming]
 lang: "en"
