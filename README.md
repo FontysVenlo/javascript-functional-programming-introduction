@@ -91,7 +91,7 @@ There will be assignments which must be delivered into an individual Github repo
 
 The invitation link to this assignments will be send during the lecture via mail and as channel-message.<!-- .element: class="fragment fade-up" -->
 
-> You have to do all assignments, doing means pushed into your individual github repository, in order to pass the Functional programming part of the PPAR course.<!-- .element: class="fragment fade-up" -->
+> You have to do and pass all assignments. Doing means pushed into your individual github repository in order to pass the Functional programming part of the PPAR course.<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 

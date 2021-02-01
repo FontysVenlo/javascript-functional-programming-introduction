@@ -44,7 +44,7 @@ revealOptions:
 
 <!-- s -->
 
-- Functional programming is<!-- .element: class="fragment fade-up" -->
+### Functional programming is
   - a programming paradigma<!-- .element: class="fragment fade-up" -->
   - mathematical functions<!-- .element: class="fragment fade-up" -->
   - avoids changing-state<!-- .element: class="fragment fade-up" -->
@@ -60,7 +60,8 @@ revealOptions:
 
 <!-- s -->
 
-- Output (result) depends on the inputs (parameters)<!-- .element: class="fragment fade-up" -->
+- Output (result) depends on the inputs (parameters)
+
 Simple example: <!-- .element: class="fragment fade-up" -->
 
 ![Simple example](images/input-output2.png)<!-- .element: class="fragment fade-up" -->
@@ -91,6 +92,11 @@ Another example:
 - in enterprise usually thousands of variables<!-- .element: class="fragment fade-up" -->
 - apps get into buggy state<!-- .element: class="fragment fade-up" -->
 
+<!-- n -->
+
+Applications in Object oriented languages reach pretty often very complex structure. They have relations and dependencies between a lot of different classes variables. Classes can and often have state variables and if bugs occur it is often hard to find and fix that. OO languages have ideas and concepts as well as best practices and testing to prevent bugs however it is still hard.
+With functional programming applied bug fixing is more easy. Think of immutability of functions and variables. No "internal" state and separation of data and functions.
+
 <!-- s -->
 
 ### Functional Programming
@@ -103,8 +109,11 @@ Another example:
 
 <!-- n -->
 
-- Object-oriented languages also try to organize the code in smaller, self-contained parts so that the code gets more easily testable and modifiable. However, often the success rate is not so high. 
-- So Functional Programming offers some other techniques for reaching that goal. By the way, most modern OO-languages also introduced functional programming (e.g. Java)
+Object-oriented languages also try to organize the code in smaller, self-contained parts so that the code gets more easily testable and modifiable. However, often the success rate is not so high. 
+So Functional Programming offers some other techniques for reaching that goal. By the way, most modern OO-languages also introduced functional programming (e.g. Java)
+
+This is also a goal when programming in OO languages, but think of it, how often is that reached? Are abstractions/interfaces in a good way? How easy is it to write "good" and testable code in OO?
+Functional programming techniques make it easier, as this is per se better testable if you apply it.
 
 <!-- s -->
 
@@ -124,7 +133,12 @@ Imperative: HOW?<!-- .element: class="fragment fade-up" -->
 
 Declarative: WHAT?<!-- .element: class="fragment fade-up" -->
 
+<!-- n -->
+
+An **imperative** way will describe all the steps - thus how are you going to do it where a **declarative** approach will describe what should happen.
+
 <!-- s -->
+
 
 ### Imperative "HOW" example
 
@@ -146,6 +160,52 @@ Declarative: WHAT?<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
+#### Imperative example
+
+```javascript
+function sumUp(numbers) {
+  let x = numbers[0]; 
+  for (let i = 1; i < numbers.length; i++){
+    x += numbers[i];
+  }
+  return x;
+};
+
+sumUp([1,2,3]); // 6
+```
+
+<!-- s -->
+
+#### Declarative example
+
+```javascript
+function sumUp(numbers) {
+  return numbers.reduce((prev, current) => prev + current, 0)
+}
+
+sumUp([1,2,3]); // 6
+```
+
+<!-- n -->
+
+Note that "under the hood" still declarative is used of course!!! We use the reduce() function. The most declarative solutions are an abstraction over some imperative implementation.
+
+To be fair: you can reach that of course with OO too! Consider you have defined a method in your class with a declarative name, then you hide the algorithm deeper in you code by building abstractions! 
+
+<!-- s -->
+
+##### Even cooler declarative example
+
+```javascript
+const sumUp = numbers => numbers.reduce((prev, current) => prev + current, 0);
+
+sumUp([1,2,3]); // 6
+```
+💪🏻<!-- .element: class="fragment fade-up" -->
+
+
+<!-- s -->
+
 ## Core Concepts of Functional Programming
 
 - Immutability<!-- .element: class="fragment fade-up" -->
@@ -156,7 +216,7 @@ Declarative: WHAT?<!-- .element: class="fragment fade-up" -->
 
 ### Immutability
 
-**Java**<!-- .element: class="fragment fade-up" -->
+#### Java<!-- .element: class="fragment fade-up" -->
 
 ```java
 int x = 10; // initialize variable 
@@ -170,7 +230,9 @@ System.out.println(x); // prints -1
 ```
 <!-- .element: class="fragment fade-up" -->
 
-**Javascript**<!-- .element: class="fragment fade-up" -->
+<!-- s -->
+
+#### Javascript
 
 ```javascript
 var x = 10; // initialize variable 
@@ -401,7 +463,7 @@ function giveMeAFunction() {
 
 - Javascript perfectly suits well for using functional programming 💪<!-- .element: class="fragment fade-up" -->
 - However, Javascript is not a PURE functional programming language, like e.g. Haskell 😢<!-- .element: class="fragment fade-up" -->
-- E.g. constants work well but do not totally ensure immutability, see: 🐛<!-- .element: class="fragment fade-up" -->0
+- E.g. constants work well but do not totally ensure immutability, see: 🐛<!-- .element: class="fragment fade-up" -->
 
 
 <!-- s -->
@@ -420,9 +482,26 @@ function giveMeAFunction() {
 
 [ESLint - Pluggable JavaScript linter](https://eslint.org/)<!-- .element: class="fragment fade-up" -->
 
+<!-- s -->
 
-# Links and Resources
+## Links and Resources
+
+### Free Javascript book
 
 - [The JavaScript Beginner's Handbook](https://flaviocopes.com/page/javascript-handbook/)
+- [The JavaScript from ES5 to ESNext Book](https://flaviocopes.com/page/es5-to-esnext/)
+
+<!-- s -->
+
+### General Javascript Tutorials
+
 - [W3C Schools JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
+
+<!-- s -->
+
+### Videos
+
+- [Functional Programming Basics In ES6 - YouTube](https://www.youtube.com/watch?v=FYXpOjwYzcs)
+- [JavaScript Functional Programming Tutorial - YouTube](https://www.youtube.com/watch?v=6NPfQJJEySY)
+- [Functional JavaScript Tutorial - E0: Intro - YouTube](https://www.youtube.com/watch?v=M4EyBg1dgas&list=PLhXZp00uXBk4ejkUZiDnv3R0AERA7Z4xp&index=1)
