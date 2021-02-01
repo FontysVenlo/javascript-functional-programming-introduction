@@ -45,10 +45,11 @@ revealOptions:
 <!-- s -->
 
 ### Functional programming is
-  - a programming paradigma<!-- .element: class="fragment fade-up" -->
-  - mathematical functions<!-- .element: class="fragment fade-up" -->
-  - avoids changing-state<!-- .element: class="fragment fade-up" -->
-  - avoids mutable data<!-- .element: class="fragment fade-up" -->
+
+- a programming paradigma<!-- .element: class="fragment fade-up" -->
+- mathematical functions<!-- .element: class="fragment fade-up" -->
+- avoids changing-state<!-- .element: class="fragment fade-up" -->
+- avoids mutable data<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 

@@ -41,7 +41,11 @@ revealOptions:
 
 <!-- n -->
 This introduction course is part of a course called PPAR - Programming Paradigms of Fontys University of Applied Sciences. The idea of PPAR is to let students in higher semesters experience different programming paradigms - thus experience what the pros and cons are.
-This part covers the functional programming paradigm. For this course was javascript chosen. The reason for that is, that javascript is not only a popular but also a modern programming language. Students can and will use this language also in multiple course - so following this course will improve the programming skills with javascript.
+This part covers the functional programming paradigm. For this course was javascript chosen. The reason for that is, that javascript is not only a popular but also a modern programming language. Students can and will use this language also in multiple course - so following this course will not only provide insides into functional programming but - even more important - improve the programming skills in general and with javascript.
+
+Except from module description:
+
+> Being able to decide for an appropiate programming language makes it necessary to have understood different programming paradigms. Only then, one is ale to choose that paradigm which fits most fot a given problem. To this end, this module looks into three important programming paradigms.
 
 <!-- s -->
 

@@ -40,7 +40,7 @@ revealOptions:
 
 <!-- s -->
 
-## Install Node.js 
+## Install Node.js
 
 - Node.js is a platform that allows to run JavaScript code outside the browser<!-- .element: class="fragment fade-up" -->
 - You do not need a webpage<!-- .element: class="fragment fade-up" -->
@@ -163,4 +163,3 @@ hello('Grogu');
 ![hello world arrow functions](images/0-setup-hello-world-arrow.gif)
 
 - as node.js does not support ES6 arrow function syntax, it will now be translated for us transparently.
-
