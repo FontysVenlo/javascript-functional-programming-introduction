@@ -55,6 +55,9 @@ We use several programming paradigms:
 - object oriented<!-- .element: class="fragment" -->
 - multi-paradigm<!-- .element: class="fragment" -->
 
+<!-- .slide: data-background="https://media.giphy.com/media/iXTrbbYMQBCMM/giphy.gif" -->
+
+
 <!-- s -->
 
 ## Languages
@@ -62,6 +65,8 @@ We use several programming paradigms:
 - Javascript<!-- .element: class="fragment" -->
 - C#<!-- .element: class="fragment" -->
 - Prolog<!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="https://media.giphy.com/media/3oEjHWbXcpeKhTktXi/giphy.gif" -->
 
 <!-- s -->
 
