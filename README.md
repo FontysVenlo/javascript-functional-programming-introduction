@@ -34,6 +34,48 @@ revealOptions:
 ...
 ---
 
+# Programming Paradigm
+
+Course of Fontys University of Applied Sciences in Venlo
+
+<!-- s -->
+
+## Objectives
+
+- use major programming paradigms adequately<!-- .element: class="fragment fade-up" -->
+- describe their essential characteristics and differences<!-- .element: class="fragment fade-up" -->
+- select an appropriate paradigm according to a problem at hand<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+We use several programming paradigms:
+
+- logical<!-- .element: class="fragment fade-up" -->
+- functional<!-- .element: class="fragment fade-up" -->
+- object oriented<!-- .element: class="fragment fade-up" -->
+- multi-paradigm<!-- .element: class="fragment fade-up" -->
+
+<!-- .slide: data-background="https://media.giphy.com/media/iXTrbbYMQBCMM/giphy.gif" -->
+
+
+<!-- s -->
+
+## Languages
+
+- Javascript<!-- .element: class="fragment fade-up" -->
+- C#<!-- .element: class="fragment fade-up" -->
+- Prolog<!-- .element: class="fragment fade-up" -->
+
+<!-- .slide: data-background="https://media.giphy.com/media/3oEjHWbXcpeKhTktXi/giphy.gif" -->
+
+<!-- s -->
+
+## Module description
+
+- [md_ppar.pdf](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/StudyMaterial/md_ppar.pdf)
+
+<!-- s -->
+
 # Functional programming with Javascript - Introduction
 
 - PPAR - Programming Paradigms course at Fontys Venlo<!-- .element: class="fragment fade-up" -->
@@ -58,6 +100,11 @@ Except from module description:
  **doing it**<!-- .element: class="fragment fade-up" -->
 
 - We will use ES6+ as well as node.js<!-- .element: class="fragment fade-up" -->
+
+<!-- n -->
+
+- ES6 stands for ECMAScript version 6 
+- European Computer Manufacturers Association (ECMA)
 
 <!-- s -->
 
