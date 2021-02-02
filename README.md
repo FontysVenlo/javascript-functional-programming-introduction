@@ -106,6 +106,6 @@ The invitation link to this assignments will be send during the lecture via mail
 [PPAR - Programming paradigms - Connect](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/)<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
-<!-- .slide: data-background="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" -->
+<!-- .slide: data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif" -->
 
 Let's go to work 💻
