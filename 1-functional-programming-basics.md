@@ -51,6 +51,9 @@ revealOptions:
 - avoids changing-state<!-- .element: class="fragment fade-up" -->
 - avoids mutable data<!-- .element: class="fragment fade-up" -->
 
+<!-- .slide: data-background="https://media.giphy.com/media/3o7WIxxI7tLStjR2p2/giphy.gif" -->
+
+
 <!-- s -->
 
 ## What is a function?
@@ -482,6 +485,19 @@ function giveMeAFunction() {
 - For more information see: <!-- .element: class="fragment fade-up" -->
 
 [ESLint - Pluggable JavaScript linter](https://eslint.org/)<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+## Exercises
+
+The exercises are located in a template directory:
+
+- [FontysVenlo/javascript-functional-exercises: Exercises for Functional Programming with Javascript](https://github.com/FontysVenlo/javascript-functional-exercises)
+
+- You get an invitation to a github classroom assignment with a copy of this repository
+
+> Exercises are not mandatory - BUT this is training for the assignments and will prepare you well
+
 
 <!-- s -->
 

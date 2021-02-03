@@ -69,11 +69,13 @@ We use several programming paradigms:
 
 <!-- s -->
 
-## Module description
+## Rules and regulations 
 
-Grading and all Learning Goals<!-- .element: class="fragment fade-up" -->
+### Module description<!-- .element: class="fragment fade-up" -->
 
-- [md_ppar.pdf](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/StudyMaterial/md_ppar.pdf)
+[md_ppar.pdf](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/StudyMaterial/md_ppar.pdf)<!-- .element: class="fragment" -->
+
+<!-- .slide: data-background="https://media.giphy.com/media/5QNOi4mT63u71oAtit/giphy.gif" -->
 
 <!-- s -->
 
@@ -97,14 +99,13 @@ Except from module description:
 
 ### Purpose
 
-- The purpose of this workshop as part of the PPAR course is to give a brief introduction of functional programming with javascript by just<!-- .element: class="fragment fade-up" -->
-
- **doing it**<!-- .element: class="fragment fade-up" -->
-
+- Brief introduction of functional programming with javascript<!-- .element: class="fragment fade-up" -->
+- It is practical<!-- .element: class="fragment fade-up" -->
 - We will use ES6+ as well as node.js<!-- .element: class="fragment fade-up" -->
 
 <!-- n -->
 
+- The purpose of this workshop as part of the PPAR course is to give a brief introduction of functional programming with javascript by just
 - ES6+ stands for ECMAScript version 6 and higher
 - European Computer Manufacturers Association (ECMA)
 
@@ -151,3 +152,5 @@ The invitation link to this assignments will be send during the lecture via mail
 <!-- .slide: data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif" -->
 
 Let's go to work 💻
+
+➡ [Functional Programming Basics](1-functional-programming-basics.md)
