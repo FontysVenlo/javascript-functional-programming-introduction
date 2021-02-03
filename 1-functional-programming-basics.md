@@ -490,14 +490,13 @@ function giveMeAFunction() {
 
 ## Exercises
 
-The exercises are located in a template directory:
+The exercises are located in a template repository:
 
-- [FontysVenlo/javascript-functional-exercises: Exercises for Functional Programming with Javascript](https://github.com/FontysVenlo/javascript-functional-exercises)
+- [FontysVenlo/javascript-functional-exercises: Exercises for Functional Programming with Javascript](https://github.com/FontysVenlo/javascript-functional-exercises)<!-- .element: class="fragment fade-up" -->
 
-- You get an invitation to a github classroom assignment with a copy of this repository
+- You get an invitation to a github classroom assignment with a copy of this repository<!-- .element: class="fragment fade-up" -->
 
-> Exercises are not mandatory - BUT this is training for the assignments and will prepare you well
-
+> Exercises are not mandatory - BUT this is training for the assignments and will prepare you well<!-- .element: class="fragment fade-up" -->
 
 <!-- s -->
 
