@@ -57,7 +57,6 @@ We use several programming paradigms:
 
 <!-- .slide: data-background="https://media.giphy.com/media/iXTrbbYMQBCMM/giphy.gif" -->
 
-
 <!-- s -->
 
 ## Languages
@@ -72,9 +71,12 @@ We use several programming paradigms:
 
 ## Module description
 
+Grading and all Learning Goals<!-- .element: class="fragment fade-up" -->
+
 - [md_ppar.pdf](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/StudyMaterial/md_ppar.pdf)
 
 <!-- s -->
+
 
 # Functional programming with Javascript - Introduction
 
@@ -103,7 +105,7 @@ Except from module description:
 
 <!-- n -->
 
-- ES6 stands for ECMAScript version 6 
+- ES6+ stands for ECMAScript version 6 and higher
 - European Computer Manufacturers Association (ECMA)
 
 <!-- s -->
@@ -146,13 +148,6 @@ The invitation link to this assignments will be send during the lecture via mail
 
 <!-- s -->
 
-### Grading
-
-- Grading was or will be explained separately. See also connect-webpage for the details: <!-- .element: class="fragment fade-up" -->
-
-[PPAR - Programming paradigms - Connect](https://connect.fontys.nl/instituten/fhtenl_studies/studies/INF/PPAR/)<!-- .element: class="fragment fade-up" -->
-
-<!-- s -->
 <!-- .slide: data-background="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif" -->
 
 Let's go to work 💻
