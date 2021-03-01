@@ -30,7 +30,7 @@ revealOptions:
   #autoSlide: 4000
   #loop: true
 
-  # center: false
+  center: false
 ...
 ---
 
@@ -460,6 +460,65 @@ function giveMeAFunction() {
 }
 ```
 <!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+## Partial application
+
+> partial application (or partial function application) refers to the process of fixing a number of arguments to a function, producing another function of smaller arity
+<!-- .element: class="fragment" -->
+
+- "transform" a function with argument to a function with less arguments<!-- .element: class="fragment" -->
+- by "binding" an argument<!-- .element: class="fragment" -->
+
+<!-- s -->
+
+```javascript
+const add = (x, y, z) => x + y + z;
+```
+<!-- .element: class="fragment fade-up" -->
+
+```javascript
+const addPartialOne = x => (y, z) => add(x, y, z);
+
+const addTwo = addPartialOne(2);
+
+const sum = addTwo(3,4)
+```
+<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+### Why partial application?
+
+- instead of passing all arguments in one place<!-- .element: class="fragment" -->
+- pass "partially" the arguments in different places in your code<!-- .element: class="fragment" -->
+- e.g. useful if you have a function which you use often with some same parameters<!-- .element: class="fragment" -->
+
+<!-- s -->
+
+## Currying
+
+<!-- .slide: data-background="https://media.giphy.com/media/di2lDhmL74ysXx9eF5/giphy.gif" -->
+
+<!-- s -->
+
+> currying is the technique of converting a function that takes multiple arguments into a sequence of functions that each take a single argument.<!-- .element: class="fragment fade-up" -->
+
+<!-- s -->
+
+```javascript
+const add = (x, y, z) => x + y + z;
+const addPartialThree = x => y => z => add(x, y, z);
+
+const add2 = addPartialThree(2); // returns a function with 1 parameter
+const add5 = add2(5); // returns a function with 1 parameter
+const sum = add5(8); // 15
+
+const sumNicely = addPartialThree(2)(5)(8); // 15
+```
+
+
 
 <!-- s -->
 
