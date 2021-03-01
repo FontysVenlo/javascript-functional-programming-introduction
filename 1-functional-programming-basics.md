@@ -30,7 +30,7 @@ revealOptions:
   #autoSlide: 4000
   #loop: true
 
-  center: false
+  #center: false
 ...
 ---
 
