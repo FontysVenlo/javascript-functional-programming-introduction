@@ -517,9 +517,6 @@ const sum = add5(8); // 15
 
 const sumNicely = addPartialThree(2)(5)(8); // 15
 ```
-
-
-
 <!-- s -->
 
 ## Some issues
@@ -527,7 +524,6 @@ const sumNicely = addPartialThree(2)(5)(8); // 15
 - Javascript perfectly suits well for using functional programming 💪<!-- .element: class="fragment fade-up" -->
 - However, Javascript is not a PURE functional programming language, like e.g. Haskell 😢<!-- .element: class="fragment fade-up" -->
 - E.g. constants work well but do not totally ensure immutability, see: 🐛<!-- .element: class="fragment fade-up" -->
-
 
 <!-- s -->
 
