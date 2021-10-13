@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Functional programming with Javascript - </title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Functional Programming with Javascript
+
+## Set up the project
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Install Node.js
+
+- Node.js is a platform that allows to run JavaScript code outside the browser<!-- .element: class="fragment fade-up" -->
+- You do not need a webpage<!-- .element: class="fragment fade-up" -->
+
+[Download Node.js](https://nodejs.org/en/)<!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+![Node.js](images/0-nodejs-download.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Install NPM
+
+- NPM is the node package manager. Let us install it.<!-- .element: class="fragment fade-up" -->
+- Open a terminal/console/cmd line<!-- .element: class="fragment fade-up" -->
+- Type:<!-- .element: class="fragment fade-up" -->
+
+`npm install -g npm@latest`<!-- .element: class="fragment fade-up" -->
+
+- On Linux/Mac could be that you need to do: <!-- .element: class="fragment fade-up" -->
+
+`sudo npm install -g npm@latest`<!-- .element: class="fragment fade-up" -->
+
+- Check your versions with:<!-- .element: class="fragment fade-up" -->
+
+`npm -v` <!-- .element: class="fragment fade-up" -->
+
+`node -v` <!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Set up the project
+
+- open Terminal/Shell/Cmd<!-- .element: class="fragment fade-up" -->
+- create a folder, e.g. inside Documents folder<!-- .element: class="fragment fade-up" -->
+
+```bash
+cd Documents
+mkdir functional-js
+cd functional-js
+npm init
+```
+<!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+![npm-init-2](images/0-setup-npm-2.gif)
+
+</script></section><section  data-markdown><script type="text/template">
+
+### ES6 support with babel
+
+- Currently node JS does not support ES6 Javascript code syntax. (e.g. chrome supports it natively)<!-- .element: class="fragment fade-up" -->
+- therefore we need to install an npm package:<!-- .element: class="fragment fade-up" -->
+
+`npm install --save @babel/core @babel/node @babel/preset-env`<!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+![babel](images/0-setup-babel.gif)
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Editor
+
+- You can use the editor of your choice with JS syntax support but we recommend:<!-- .element: class="fragment fade-up" -->
+
+![VS Code](images/visual-studio-code-logo.png)<!-- .element: class="fragment fade-up" -->
+
+[Download Visual Studio Code](https://code.visualstudio.com/)<!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Hello World "normal JS"
+
+- open the folder you created in your editor<!-- .element: class="fragment fade-up" -->
+- Create a file called « hello-world.js » and type:<!-- .element: class="fragment fade-up" -->
+
+```javascript
+function hello(name) {
+    console.log("Hello " + name);
+}
+
+hello("Grogu");
+```
+<!-- .element: class="fragment fade-up" -->
+
+- save the file<!-- .element: class="fragment fade-up" -->
+- now open the Terminal inside Visual Studio Code in the menu bar with: >Terminal >Open Terminal<!-- .element: class="fragment fade-up" -->
+- Type: <!-- .element: class="fragment fade-up" -->
+
+`node hello-world.js`<!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+![hello world](images/0-hello-world.gif)
+
+- This is with normal Javascript syntax
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Hello World "ES6 syntax - arrow functions"
+
+- Create a file called « hello-world-arrow.js » and type:<!-- .element: class="fragment fade-up" -->
+
+```javascript
+const hello = name => console.log(`Hello ${name}`)
+
+hello('Grogu');
+```
+<!-- .element: class="fragment fade-up" -->
+
+- save the file<!-- .element: class="fragment fade-up" -->
+- now open the Terminal inside Visual Studio Code in the menu bar with: >Terminal >Open Terminal<!-- .element: class="fragment fade-up" -->
+- Then type: « npx babel-node hello-world-arrow.js »<!-- .element: class="fragment fade-up" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+![hello world arrow functions](images/0-setup-hello-world-arrow.gif)
+
+- as node.js does not support ES6 arrow function syntax, it will now be translated for us transparently.</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"concave","transition-speed":"fast","slideNumber":true,"history":true,"progress":true,"width":1248,"height":800,"parallaxBackgroundImage":"images/fontys-parallax-all-dark.jpg","parallaxBackgroundSize":"2100px 1024px"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
