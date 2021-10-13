@@ -36,7 +36,7 @@ revealOptions:
 
 # Programming Paradigm
 
-Course of Fontys University of Applied Sciences in Venlo
+Course of Fontys University of Applied Sciences in Venlo.
 
 <!-- s -->
 
